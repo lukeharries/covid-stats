@@ -1,0 +1,24 @@
+.cs-key-stats {
+  &__inner-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 24px 0;
+  }
+
+  &__stat {
+    display: flex;
+    width: 200px;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  &__stat-name {
+    font-size: 18px;
+  }
+
+  &__stat-value {
+    font-size: 28px;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,19 @@
+$breakpoint-tablet: 726px !default;
+
+@mixin from($device) {
+  @media screen and (min-width: $device) {
+    @content;
+  }
+}
+
+@mixin until($device) {
+  @media screen and (max-width: $device - 1px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @include from($breakpoint-tablet) {
+    @content;
+  }
+}
