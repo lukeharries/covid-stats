@@ -42,18 +42,56 @@ export const CumulativeTotalChart: React.FC<CumulativeTotalChartProps> = props =
         ...chartData
       ]}
       options={{
-        legend: 'none',
-        animation: {
-          startup: true,
-          duration: 1200,
-          easing: 'inAndOut'
+        legend: {
+          position: 'top', 
+          textStyle: {
+            color: '#ffffff',
+            fontName: 'Roboto',
+            fontSize: 14,
+          }
         },
+        backgroundColor: '#222222',
+        colors:['#7799cb','#E75B4C'],
+        lineWidth: 4,
+        // chartArea:{left:'10%',top:'10%',width:'80%',height:'80%'},
         hAxis: {
-          maxValue: endDate
+          maxValue: endDate,
+          baselineColor: "#515151",
+          gridlines: { color: "#515151" },
+          minorGridlines: { color: "#383838" },
+          textStyle: {
+            color: '#ffffff',
+            fontName: 'Roboto',
+            fontSize: 12,
+          }
         },
         vAxis: {
           maxValue: chartCasesMax,
-          title: 'Total Cases'
+          title: 'Total Cases',
+          baselineColor: "#515151",
+          gridlines: { color: "#515151" },
+          minorGridlines: { color: "#383838" },
+          textStyle: {
+            color: '#ffffff',
+            fontName: 'Roboto',
+            fontSize: 12,
+          },
+          titleTextStyle: {
+            color: '#ffffff',
+            fontName: 'Roboto',
+            fontSize: 12,
+          },
+        },
+        trendlines: {
+          0: {
+            labelInLegend: 'Total Cases Exponential Trend',
+            type: 'exponential',
+            color: '#36598c',
+            lineWidth: 2,
+            opacity: 1,
+            showR2: false,
+            visibleInLegend: true
+          }
         }
       }}
     />

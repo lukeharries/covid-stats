@@ -6,13 +6,15 @@ body {
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 3rem;
+  font-weight: $font-weight-bold;
   margin-bottom: 1.4rem;
   line-height: 1.2;
 }
 
 h2 {
   font-size: 2rem;
+  font-weight: $font-weight-bold;
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   line-height: 1.2;
@@ -42,5 +44,5 @@ b {
 }
 
 a {
-  color: $colour-link;
+  color: $colour-light-grey;
 }

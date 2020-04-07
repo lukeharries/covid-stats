@@ -1,0 +1,40 @@
+.cs-footer {
+    background-color: $colour-blue;
+    color: $colour-white;
+
+    &__container {
+        padding: 24px 16px;
+
+        @include tablet {
+            max-width: 928px;
+            margin: 0 auto;
+            padding: 48px 0px;
+        }
+    }
+  
+    &__text {
+      margin: 24px 0;
+      text-align: center;
+    }
+
+    &__socials-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+
+    &__social-link {
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
+
+        font-size: 1.5em;
+        color: $colour-white;
+
+        &:hover {
+            color: rgba($color: $colour-white, $alpha: 0.7);
+            cursor: pointer;
+        }
+    }
+  }
+  

@@ -23,19 +23,7 @@ const Layout: React.FC = props => {
 
   return (
     <>
-      <header className="cs-header">
-        <div className="cs-header__container">
-          <h1 className="cs-header__header">{data.site.siteMetadata.title}</h1>
-        </div>
-      </header>
-      <div className="cs-content">
-        <main>{children}</main>
-      </div>
-      <footer className="cs-footer">
-        <div className="cs-footer__container">
-          <span className="cs-footer__text">Created by Luke Harries</span>
-        </div>
-      </footer>
+    {children}
     </>
   );
 };

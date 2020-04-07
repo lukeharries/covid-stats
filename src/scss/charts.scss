@@ -1,0 +1,12 @@
+.cs-charts {
+    padding: 24px 0;
+}
+
+.cs-charts-chart {
+    margin-bottom: 36px;
+
+    &__heading {
+        padding-bottom: 6px;
+        border-bottom: 1px solid $colour-white;
+    }
+}

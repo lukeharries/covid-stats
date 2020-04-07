@@ -42,22 +42,50 @@ export const DailyNewCasesChart: React.FC<DailyNewCasesChartProps> = props => {
         ...chartData
       ]}
       options={{
-        legend: 'top',
-        bar: { groupWidth: '75%' },
+        bar: { groupWidth: '80%' },
         isStacked: true,
-        animation: {
-          startup: true,
-          duration: 1200,
-          easing: 'inAndOut'
+        legend: {
+          position: 'top', 
+          textStyle: {
+            color: '#ffffff',
+            fontName: 'Roboto',
+            fontSize: 14,
+          }
         },
+        backgroundColor: '#222222',
+        colors:['#4470b1', '#6FC570'],
+        lineWidth: 4,
+        // chartArea:{left:'10%',top:'10%',width:'80%',height:'80%'},
         hAxis: {
-          maxValue: endDate
+          maxValue: endDate,
+          baselineColor: "#515151",
+          gridlines: { color: "#515151" },
+          minorGridlines: { color: "#383838" },
+          textStyle: {
+            color: '#ffffff',
+            fontName: 'Roboto',
+            fontSize: 12,
+          }
         },
         vAxis: {
           maxValue: chartCasesMax,
-          title: 'Cases'
+          title: 'Cases',
+          baselineColor: "#515151",
+          gridlines: { color: "#515151" },
+          minorGridlines: { color: "#383838" },
+          textStyle: {
+            color: '#ffffff',
+            fontName: 'Roboto',
+            fontSize: 12,
+          },
+          titleTextStyle: {
+            color: '#ffffff',
+            fontName: 'Roboto',
+            fontSize: 12,
+          },
         }
-      }}
+      }
+    }
     />
   );
 };

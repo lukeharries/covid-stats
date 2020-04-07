@@ -1,22 +1,6 @@
-.cs-header {
-  width: 100%;
-  background-color: $color-primary;
-  color: #ffffff;
-  margin: 0 0 16px;
-
-  &__container {
-    padding: 24px 16px;
-
-    @include tablet {
-      max-width: 928px;
-      margin: 0 auto;
-      padding: 48px 0px;
-    }
-  }
-
-  &__header {
-    margin: 0;
-  }
+body {
+  background: $colour-black;
+  color: $colour-white;
 }
 
 .cs-content {
@@ -31,20 +15,5 @@
       max-width: 928px;
       margin: 0 auto;
     }
-  }
-}
-
-.cs-footer {
-  &__container {
-    padding: 0 16px;
-
-    @include tablet {
-      max-width: 960px;
-      margin: 0 auto;
-    }
-  }
-
-  &__text {
-    margin: 24px 0;
   }
 }

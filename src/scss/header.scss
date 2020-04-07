@@ -1,0 +1,28 @@
+.cs-header {
+    background-color: $colour-blue;
+    color: $colour-white;
+    margin: 0;
+
+    &__container {
+        padding: 24px 16px;
+
+        @include tablet {
+            max-width: 928px;
+            margin: 0 auto;
+            padding: 48px 0px;
+        }
+    }
+
+    &__header {
+        margin: 0;
+    }
+
+    &__preamble {
+        margin: 36px 0;
+    }
+
+    &__last-updated {
+        margin: 36px 0 0;
+        font-style: italic;
+    }
+}
